@@ -10,4 +10,4 @@ shop34
 ``npm install``
 <br>
 
-``npm run serve``
+``npm run dev``

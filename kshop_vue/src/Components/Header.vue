@@ -1,30 +1,27 @@
 <template>
   <div class="container-flex">
     <nav class="navbar navbar-light">
-      <div class="dropdown d-xl-none d-lg-none mr-auto">
-        <img src="https://png.icons8.com/windows/32/000000/menu.png" data-toggle="dropdown" data-target="#navd" aria-haspopup="true" aria-expanded="false">
-        
-      </div>
-      <!--Logo-->
       <a class="navbar-brand py-0 pl-5">
         <span>K-Shop</span>
       </a>
-      <!--Header navigation-->
-      
 
-      <p class="navbar-item ml-auto">
-        <div class="searc d-none d-xl-block d-lg-block pr-3">
+      <div class="navbar-item ml-auto">
+        <div class="d-flex align-items-center">
+          
+          <div class="searc d-none d-xl-block d-lg-block pr-3">
           <input type="search" class="search">
         </div>
-        <div class="user">
-          <h5 style="cursor: pointer" data-toggle="modal" data-target="#userModal">Sign In</h5>
-        </div>
-
-        <div class="bag" @mouseenter="openCart">
+          <div class="user pr-3">
+            <h5 style="cursor: pointer" data-toggle="modal" data-target="#userModal">Sign In</h5>
+          </div>
+          <div class="bag" @mouseenter="openCart">
             <img class="pb-1" src="@/assets/cart.svg">
             <span class="mb-3" v-if="this.bagItemscount > 0">{{ bagItemscount }}</span>
+          </div>
         </div>
+      </div>
     </nav>
+
     <!--User Modal-->
     <div class="modal fade" id="userModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">

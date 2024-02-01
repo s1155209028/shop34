@@ -20,7 +20,7 @@ export default{
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
 #app {
   background-color: #F8F8F8 !important;
   font-family: 'Exo 2', sans-serif !important;

@@ -17,7 +17,7 @@
               <img :src="thing.img" style="width: 90px;">
             </div>
             <div class="col6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
-              <h4>{{ thing.title }}</h4>
+              <h5>{{ thing.title }}</h5>
               <h6>{{ thing.price }}</h6>
             </div>
             <div class="col2 col-xl-2 col-lg-2 col-md-2 col-sm-2 pt-4">
@@ -29,10 +29,10 @@
         <hr v-if="this.cartContent.length !== 0">
         <div class="row justify-content-between" style="background:#7dcf85;padding:10px 10px 10px 10px" v-if="this.cartPrice != undefined">
           <div class="flex-column pl-3">
-            <h4>Total</h4>
+            <h5>Total</h5>
           </div>
           <div class="flex-column pr-3">
-            <h4>${{ cartPrice }}</h4>
+            <h5>${{ cartPrice }}</h5>
           </div>
         </div>
 
