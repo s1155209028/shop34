@@ -1,4 +1,13 @@
-s1155209028 shop34
-#start up
-npm install
-npm run serve
+# SID&ShopID
+s1155209028 
+<br>
+shop34
+
+# Start up
+``cd kshop_vue``
+<br>
+
+``npm install``
+<br>
+
+``npm run serve``
