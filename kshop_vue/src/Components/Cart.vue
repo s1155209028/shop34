@@ -35,6 +35,13 @@
             <h4>${{ cartPrice }}</h4>
           </div>
         </div>
+
+        <div class="row justify-content-between" v-if="this.cartContent.length !== 0">
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+            <h5 class="checkout-btn">Checkout</h5>
+          </div>
+        </div>
+        
       </div>
     </div>
 
@@ -149,5 +156,14 @@ border-color: white;
 .remove-btn:hover {
   background-color: grey;
 }
+
+.checkout-btn{
+  margin-left: 250px;
+  text-decoration: none;
+}
+
+  .checkout-btn:hover {
+    text-decoration: underline;
+  }
 
 </style>
